@@ -5,7 +5,7 @@
         {% for entry in app.entries %}
             <fieldset>
                 <legend>{{ entry.author }}</legend>
-                {{ entry.content }}
+                {{ entry.content | raw }}
             </fieldset>
         {% endfor %}
     {% endblock %}
